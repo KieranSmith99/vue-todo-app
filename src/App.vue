@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Todos />
+    <Todos v-bind:todos="todos" />
   </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
         {
           id: 1,
           title: "Todo One",
-          completed: true
+          completed: false
         },
         {
           id: 2,
