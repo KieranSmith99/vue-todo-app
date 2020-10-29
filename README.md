@@ -1,4 +1,5 @@
-# vue-todo-app
+# Vue To-Do App
+In this Vue.js project, I will be creating a simple To-Do List web application.
 
 ## Project setup
 ```
