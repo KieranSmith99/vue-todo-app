@@ -17,13 +17,16 @@ export default {
         }
     },
     methods: {
-        addTodo() {
+        addTodo(e) {
+            e.preventDefault();
             const newTodo = {
                 id: uuid.v4(),
                 title: this.title,
                 completed: false
             }
             this.$emit('add-todo', newTodo);
+
+            this.title = '';
         }
     }
 }
